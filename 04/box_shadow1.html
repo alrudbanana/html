@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow(그림자 넣기)</title>
+    <style>
+        body{
+             font-style: italic; font-weight: 100px bold; 
+        }
+        .b1{width : 300px; height: 30px; background-color: aqua; border: 1px solid red;
+            box-shadow: 10px 10px 10px teal;
+       }
+        .b2{width : 300px; height: 30px; background-color: aqua;
+            border: 5px solid rgba(255, 0, 0,0.9999);
+            margin: 50px;
+            box-shadow: -10px -10px 0px rgba(132, 212, 156);
+        }
+
+        .b3{width : 300px; height: 30px; background-color: rgba(0,255,0,0.8);
+           border: 5px solid rgba(251,1,230,0.476);
+           box-shadow: 10px 10px 0px red, 20px 20px 0px blue, 30px 30px 0px green
+        }
+
+        .b4{
+        padding: 40px;   margin : 100px ; border: 50px dotted red; background-color: pink; 
+        width: 100px; height: 100px;  border-radius: 50px; 
+        box-shadow: -10px +10px 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <h3>그림자 넣기</h3>
+
+
+    <!--
+        box-shadow: 수평 그림자(필수) | 수직 그림자(필수) 이 두개는 반드시 있어야함 
+        수평그림자: + (왼쪽으로이동), - (오른쪽으로 이동)
+        수직그림자: + (아래로이동), -(위로이동)
+        그림자 흐림| 그림자번짐 | 그림자색상 | 삽입효과
+
+    -->
+<div class="b1">박스 그림자 넣기 1</div>
+<div class="b2">박스 그림자 넣기 2</div>
+<div class="b3">박스 그림자 넣기 3</div>
+<div class="b4">박스 그림자 넣기 4</div>
+</body>
+</html>

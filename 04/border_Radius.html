@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border - radius</title>
+    <style>
+        body{
+            font-weight: bold; font-size: 8pt;
+        }
+        .b1{
+            width: 300px; height: 50px;
+            color: pink; border-style: solid;
+            border-radius: 15px;
+        }
+        .b2{
+            width: 300px; height: 50px;
+            color: blue; border-style: solid;
+            border-bottom-right-radius: 25px;
+        }
+        .b3{
+            width: 300px; height: 50px;
+            color: blue; border-style: dotted;
+            border-top-right-radius: 25px;
+        }
+        .b4{
+            width: 300px; height: 300px;
+            color: blue; border-style: dotted;
+            border-radius: 150px;
+           
+        }
+        #bb1{width:100px;height: 100px;color: green;border-style: solid; border-radius: 50px;}
+    </style>
+</head>
+<body>
+    <h3>Border-Radius</h3>
+    <!--
+        border-radius : 사각형의 4개의 모서리를 둥글게 처리하는 방법 
+            border-top-left-radius : 왼쪽 상단만 처리 
+            border-top-right-left: 오른쪽 상단만 처리 
+            border-dottop-left-radius: 왼쪽 하단만 처리 
+             border-dottop-right-radius: 오른쪽 하단 처리 
+    -->
+    <h1 class="b1">둥근 모서리 처리 예제 1</h1>
+    <h1 class="b2">둥근 모서리 처리 예제 2</h1>
+    <h1 class="b3">둥근 모서리 처리 예제 3</h1>
+    <h1 class="b4">둥근 모서리 처리 예제 4</h1>
+
+    <div id="bb1">div 박스1</div>
+    <div id="bb2">div 박스2</div>
+    <div id="bb3">div 박스3</div>
+</body>
+</html>
