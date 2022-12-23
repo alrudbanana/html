@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float을 사용하면서 clear</title>
+    <style>
+        div {border: 1px solid red;
+            width: 200px;
+            margin: 10px;
+            float: left;
+        }
+        .div1{overflow: auto;}
+        .div2{width: 500px;}
+        .div3 {
+            clear:both;
+            overflow: auto;
+        }
+        .div4{width: 500px;}
+    
+    </style>
+</head>
+<body>
+    <h3> Float을 사용하면서 clear를 적절하게 사용해야한다.</h3>
+
+
+    <div class="div1"><img src="../img/pic1.jpg"></div>
+    <div class="div2">div 2 float 속성 :
+    인라인 태그나 블락태그에서 화면을 배치하는 방법을 설정
+    inherit: 부모의 요소의 float속성을 상속 받는다.
+    left: 요소를 왼쪽으로 정렬
+    right: 요소를 오른쪽으로 정렬
+    none: float속성을 적용하지 않는다.</div>
+
+
+    <div class="div3"><img src="../img/pic2.jpg"></div>
+    <div class="div4">div 4 -float 속성 :
+    인라인 태그나 블락태그에서 화면을 배치하는 방법을 설정
+    inherit: 부모의 요소의 float속성을 상속 받는다.
+    left: 요소를 왼쪽으로 정렬
+    right: 요소를 오른쪽으로 정렬
+    none: float속성을 적용하지 않는다.</div>
+</body>
+</html>
