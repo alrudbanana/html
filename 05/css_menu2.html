@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css를 사용한 상단 메뉴 - 드롭다운 메뉴</title>
-    <style>
-       *{margin: 0; padding: 0;} /*margin padding 다 삭제* 처음 시작시 기본 세팅. 기존 설정 리셋/
-        li{list-style: none;}
-        a {text-decoration: none;font-size: 14px;}
-
-        .menu{ width:800px;
-            overflow: hidden;
-            margin: 150px auto ;}
-        .menu > li { /*직계자손*/
-            /*border:1px solid red:*/
-
-            width: 20%; /*5개 * 20% =100%*/
-            float: left;
-            text-align: center;
-            line-height: 40px;
-            background-color: #5778ff;
-        }
-        .menu a{
-            color: #ffffff; /* 메뉴의 후손. 모든 a가 메뉴의 
-                            후손이기 때문에 모든 a가 흰색으로 처리  */
-        }
-        .submenu li{
-            line-height: 50px;
-            background-color: #ebcad4;
-        }
-
-        /*submenu는 기본 출력시 보이지 않게 처리*/
-        .submenu {
-            height: 0; /* submenu의 기본 높이 ul의 높이를 0으로 처리하면 안보임 */
-            overflow:hidden;
-        }
-        /*마우스를 올렸을때 보이게 처리 / 앵커 태그에 처리하면안됨 li 전체에 처리  */
-        .menu > li:hover {
-            background-color: hotpink;
-            transition-duration: 0.5s; /*애니메이션 효과: 부드럽게 출력 */
-        }
-         .menu > li:hover .submenu {
-            height: 250px; /*서브메뉴 1개 높이 50px*/
-            background-color: hotpink;
-            transition-duration: 1s; /*애니메이션 효과: 부드럽게 출력 */
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
     <ul class="menu"> 
@@ -101,6 +59,5 @@
             </ul>
         </li>
     </ul>
-    
 </body>
 </html>
