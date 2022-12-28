@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type="text/css" href="css/index.css">
+    
+    <style>
+    
+    table{
+        border: 10px solid red;
+    } 
+    header #top_main{
+        margin-left: 670px;
+        border: 1px solid pink;
+    }
+    header #top_main li{ 
+        display: inline;
+        list-style-type: none;
+    }
+
+    header #main_ul{
+        position: relative;
+        top:-35px; right:-185px; bottom: 400000000000px;
+    }
+    
+    header #main_ul li{
+        font-size: 15px;
+        font-family: "맑은 고딕";
+        font-weight: bold;
+        color: #cccccc;
+        display: inline;
+        padding-right: 80px;
+}
+    aside .login{
+        width: 250px;
+        height: 150px;
+        background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        
+    <!--헤더-->
+
+        <header>
+
+            <div>
+                <ul id="top_main">
+                    <li>HOME |</li>
+                    <li> LOGIN |</li>
+                    <li> JOIN |</li>
+                    <li> NOTICE |</li>
+                </ul>
+            </div>
+
+            <div id="header_main">
+                <img src="img/logo.png">
+                <img src="img/main_menu_bg.png">
+            </div>
+
+
+            <div>
+                <ul id="main_ul">
+                    <li>자유게시판</li>
+                    <li>기타연주</li>
+                    <li>공동 구매</li>
+                    <li>연주회 안내</li>
+                    <li>회원 게시판</li>
+                </ul>
+            </div>
+        </header>
+
+    <!--에이사이드-->
+        <aside>
+            <div class="login">
+                <img id="login1" src="img/ttl_login.png">
+                <input type="text" size="10">
+                <input type="text" size="10">
+                <img id="login2" src="img/btn_login.png">
+                <img id="login3" src="img/btn_join.gif">
+                <img id="login4" src="img/btn_search.gif">
+            </div>
+
+            <div class="guest_book">
+                <img id="guest" src="img/ttl_memo.gif">
+                <div>라인</div>
+                <ul>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    <li>안녕하세요!</li>
+                    
+                </ul>
+            </div>
+        </aside>
+
+    <!--메인-->
+        <main>
+            <table class="t1">
+                <!-- 맨위그림 -->
+                <tr>
+                    <td colspan="2"><img src="img/main_img.png"></td>
+                </tr> 
+                
+                <tr>
+                    <!--공지사항-->
+                    <td>
+                        <img src="img/latest1.gif">
+                        <img src="img/more.gif">
+                        <hr>
+                        <img src="img/book_pen.gif">
+                            <table class="t2">
+                                <tr>
+                                    <td class="index_main_td1">루바토 개편과 사이트 이용..</td>
+                                    <td class="index_main_td2">2017-09-20</td>
+                                </tr>
+                                <tr>
+                                    <td class="index_main_td1">루바토 개편과 사이트 이용..</td>
+                                    <td class="index_main_td2">2017-09-20</td>
+                                </tr>
+                                <tr>
+                                    <td class="index_main_td1">루바토 개편과 사이트 이용..</td>
+                                    <td class="index_main_td2">2017-09-20</td>
+                                </tr>
+                                <tr>
+                                    <td class="index_main_td1">루바토 개편과 사이트 이용..</td>
+                                    <td class="index_main_td2">2017-09-20</td>
+                                </tr>
+
+                            </table>
+                    </td>
+                            <!--유튜브-->
+                            <td  rowspan="2">
+                                <img src="img/latest3.gif">
+                                <img src="img/more.gif">
+                                <hr>
+                                <img src="img/bach.jpg">
+                            </td>
+                </tr>
+
+                <td><img class="name" src="img/latest2.gif">
+                    <img class="more" src="img/more.gif">
+                    <hr>
+                    <img src="img/book_pen.gif">
+                    <table class="t2">
+                        <tr>
+                            <td class="index_main_td1">까스릉님의 선물인 보드카...</td>
+                            <td class="index_main_td2">2017-09-20</td>
+                        </tr>
+                        <tr>
+                            <td class="index_main_td1">까스릉님의 선물인 보드카...</td>
+                            <td class="index_main_td2">2017-09-20</td>
+                        </tr>
+                        <tr>
+                            <td class="index_main_td1">까스릉님의 선물인 보드카...</td>
+                            <td class="index_main_td2">2017-09-20</td>
+                        </tr>
+                        <tr>
+                            <td class="index_main_td1">까스릉님의 선물인 보드카...</td>
+                            <td class="index_main_td2">2017-09-20</td>
+                        </tr>
+                    </table></td>
+            </tr>
+            <tr>
+                <!-- 포토 갤러리 -->
+                <td colspan="2">
+                    <img src="img/latest4.gif">
+                    <div class="latest4">
+                        <ul class="img1">
+                            <li><img src="img/img1.jpg"></li>
+                            <li>기타 페스티벌 4중주</li>
+                        </ul>
+                        <ul class="img1">
+                            <li><img src="img/img1.jpg"></li>
+                            <li>기타 페스티벌 4중주</li>
+                        </ul>
+                        <ul class="img1">
+                            <li><img src="img/img1.jpg"></li>
+                            <li>기타 페스티벌 4중주</li>
+                        </ul>
+                    </div>
+    
+                </td>
+            </tr>
+        </table>
+        </main>
+
+    <!--푸터--> 
+        <footer> 
+            <div class="line"></div>
+            <img src="img/logo_footer.gif">
+            
+            <h6 id="address">서울시 강남구 삼성동1234 우: 123-1234</h6>
+            <h6 id="tel">TEL : 031-1234-1234 email@domain.com</h6>
+            <h6 id="copy">COPYRIGHT (C) 루바토 ALL RIGHT5 RESERVED</h6>
+        </footer> 
+
+
+
+    </div><!--wrap끝-->
+</body>
+</html>
