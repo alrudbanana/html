@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+        <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+    <style>
+        header .search{
+            float: left;
+            padding-top: 10px;
+            margin-left: 200px;
+            font-size: 12px;
+        }
+        
+
+        header #search_title{
+            color: rgb(158,197,49);
+            float: left;
+        }
+        header .search #search_line {
+            border-bottom:1px solid rgb(150,193,31) ;
+            width: 140px; 
+            padding: 0;
+            float: left;
+        }
+
+        header .simple_menu{
+            width: 350px;
+            position: relative; left: 650px; bottom:40px;
+            font-size: 14px;
+        }
+
+        header .simple_menu li{
+           display: inline; 
+            padding: 5px;
+            color: rgb(136, 136, 145);
+
+        }
+
+        header .main_menu{
+            padding-top: 10px;
+        }
+
+        header .main_menu li{
+            display: inline;
+            padding-left: 100px;
+            font-weight: bold;
+            font-family: "맑은 고딕";
+            color: rgb(214, 214, 210);
+            
+        }
+
+        aside .category_item{
+            width: 250px;
+            height: 600px;
+            margin-left: 15px;
+            
+        }
+        
+        aside .aside_div_text{
+            color: white;
+            background-color: #96c11f;
+            text-align: center;
+            height: 35px;
+            width: 285px;
+            padding-top: 13px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            
+        }
+
+        aside #aside_ul li{
+            width: 260px;
+            height: 24px;
+            border-bottom: 1px solid #a3a3a3;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 1px 4px 2px 25px;
+    
+
+        }
+
+        main .main{
+            padding-top: 15px;
+            
+            float: left;
+        }
+
+        main #main_img{
+            width: 460px;
+            height: 385px;
+        }
+
+        main .sub_notice{
+            background-color:white;
+            width: 250px; height: 200px;
+            float: right;
+            /* margin-right: 35px;
+            margin-left: 10px; */
+            /* padding-right: 40px;
+            padding-bottom: 10px; */
+            border: 0.5px solid #a3a3a3;
+            
+        }
+        main #notice_tit{
+            font-size: 13px;
+            font-weight: bold;
+            padding-top: 4px;
+            padding-bottom: 10px;
+            color: #96c11f;
+        
+        }
+
+        main .sub_notice ul{
+            list-style-type: disc;
+            border: 1px solid red;
+            float: left; margin-left: auto;
+            margin-right: auto;
+        
+            
+        
+        }
+        main .sub_notice li{
+            font-size: 12px;
+            /* margin-left: 100px;*/
+            display: inline-block; text-align: center;
+            /* border: 1px solid red; */
+            
+        }
+
+        /* main #event1{
+            float: right ; 
+            margin-top:10px;
+            /* margin-bottom: 100px; */
+        
+
+        /* main #event2{
+        width: 220px;
+        height: 110px;
+        margin: 60px 10px;
+        position: absolute; 
+        bottom: 350px;
+            } */ 
+
+    main .index_main1_week{
+        background-image: url('./img/week_event.gif');
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 190px;
+        margin-left: 5px;
+        margin-top: 10px;
+       padding-bottom: 5px;
+        float: left;
+    }
+
+    main .index_main1_week img{
+    width: 220px;
+    height: 110px;
+    margin: 60px 10px;
+}
+    .main{
+        width: 440px;
+        height: 330px;
+        float: left;
+    }
+
+    #specialshop {
+        float: left;
+    }
+
+    .landscape{
+        background-image: url(img/landscape.gif);
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 190px;
+        margin-left: 5px;
+        margin-top: 10px;
+        float: left;
+    }
+
+    .landscape img{
+       float: right;
+       margin-top: 6px; margin-right: 15px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <!--레이아웃-->
+    <header>
+        <img id="logo" src="img/logo.gif">
+        <div class="search">
+            <div id ="search_title">SEARCH</div>
+            <div id="search_line">&nbsp;</div> <!--서치라인만들기-->
+            <img id="btn_search" src="img/btn_search.gif"> 
+        </div>
+        <div class="clear"></div>
+
+        <div class="simple_menu">
+            <ul>
+                <li style="color: rgb(150,193,31) ;">로그인</li>
+                <li style="color: rgb(150,193,31) ;">회원가입</li>
+                <li>마이페이지</li>
+                <li>이용안내</li>
+                <li>고객센터</li>
+            </ul>
+        </div>
+
+        <nav class="main_menu">
+            <ul>
+                <li>상세이미지</li>
+                <li>장바구니</li>
+                <li>고객갤러리</li>
+                <li>주문배송</li>
+                <li>자주하는질문</li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <aside>
+        <div class="category_item">
+            <div class="aside_div_text">CAREGORY ITEM</div>
+           <ul id="aside_ul">
+                <li>생활아트</li>
+                <li>캔버스아트</li>
+                <li>사진벽지</li>
+                <li>창문형/현관문형</li>
+                <li>포인트 벽지</li>
+                <li>세계 지도</li>
+                <li>엔티크 세계지도 벽지</li>
+                <li>입체 세계지도 벽지</li>
+                <li>어린이방 세계지도</li>
+                <li>족자형 롤스크린</li>
+                <li>맞춤제작 결제창</li>
+           </ul>
+        </div>
+    </aside>
+
+    <main>
+       <div class="m1">
+            <div class="main">
+                <img id="main_img"src="img/main_img.gif">
+            </div>
+    
+            <div class="sub_notice">
+                <div id="notice_tit">
+                    NOTICE
+                </div>
+                <hr>
+                <div id="sub_line">&nbsp;</div>
+                <ul>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                    <li>
+                        폭설로 인한 배송지연 안내
+                    </li>
+                </ul>
+            </div>
+
+            <div class="index_main1_week">
+                <img src="./img/week_event_img.gif">
+            </div>
+
+        </div>
+       <div class="clear"></div>
+
+
+
+    <div class="m2">
+            <div id="specialshop"style="position: relative;">
+                <img src="img/special_shop.gif"></img>
+                <div style="position: absolute; top: 55px; left: 25px;">
+                    <img src="img/special_img1.gif">            
+                </div>
+                <div style="position: absolute; top: 55px; left: 300px;">
+                    <img src="img/special_img2.gif"></img>
+                </div>
+            </div>
+
+        <div id="landscape" style="position: relative;">
+            <img src="img/landscape.gif"></img>
+            <div style="position: absolute; top: 5px; left: 720px;">
+                <img src="img/landscape_img1.gif">
+            </div>
+            <div style="position: absolute; top: 5px; left: 850px;">
+                <img src="img/landscape_img2.gif"></img>
+            </div>
+        </div>
+
+        <div id="pointwallpage" style="position: relative;">
+            <img src="img/point_wallpaper.gif"></img>
+            <div style="position: absolute; top: 5px; left: 720px;">
+                <img src="img/point_wallpaper_img1.gif">
+            </div>
+            <div style="position: absolute; top: 5px; left: 850px;">
+                <img src="img/point_wallpaper_img2.gif"></img>
+            </div>
+        </div>
+
+
+        <div id="children" style="position: relative;">
+            <img src="img/children.gif"></img>
+            <div style="position: absolute; top: 5px; left: 720px;">
+                <img src="img/children_img1.gif">
+            </div>
+            <div style="position: absolute; top: 5px; left: 850px;">
+                <img src="img/children_img2.gif"></img>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="clear"></div>
+
+    <div class="m3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </div>
+        <div class="clear"></div>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+       
+    </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+    <style>
+    aside .commu_box {
+    border: 1px solid blue;
+    margin-top: 10px;
+    }
+    
+    aside .commu_list {
+    position: relative;
+    top: -230px;
+    left: 20px;
+    }
+    
+    aside .commu_list li {
+    padding-bottom: 10px;
+    }
+    
+    aside #aside_pic{
+    position: relative;
+    top:-100px
+    }
+
+     main .commu_banner{
+        margin-left: 30px;
+       }
+
+      main #free_board_title{
+            margin-top: 30px;
+            margin-left: 30px;
+            padding-bottom: 20px;
+            color: rgb(68,68, 68);
+           
+        }
+
+    main .write_table,th,td{
+        border: 1px solid black; /*이따 지우기*/
+         border-collapse: collapse;
+         width: 870px;
+         height: 20px;
+         margin: 10px 30px 25px 30px;
+        
+    }
+
+    main .write_table{
+        position: relative;
+        top:-300px;
+    }
+
+    main #write{
+        height: 30px;
+        background-color: rgb(238, 238, 238) ;
+        border-top: 1px solid rgb(187,187,187);
+        border-bottom: 1px solid rgb(187,187,187);
+        }
+    
+    </style>
+</head>
+
+
+<body>
+<div id="page">
+    <header>
+    <div id="topmenu">
+        <ul>
+            <li>Home |</li>
+            <li> Login |</li>
+            <li> Join |</li>
+            <li>Notice |</li>
+        </ul>
+    </div>
+    
+    <div id="logo1">
+        <img id="logo" src="img/logo.png">
+    </div>
+    
+    
+    <div id="logo2">
+        <img id="main_menu" src="img/main_menu_bg.png">
+        <ul id="mainmenu">
+            <li class="menu">자유게시판&nbsp;</li>
+            <li class="menu">기타연주 &nbsp;</li>
+            <li class="menu">공동 구매 &nbsp;</li>
+            <li class="menu">연주회 안내 &nbsp;</li>
+            <li class="menu">회원 게시판 &nbsp;</li>
+        </ul>
+    </div>
+    <div id="clear"></div>
+    </header>
+    
+    
+    <aside>
+        <section>
+            <div id="logbox">
+    
+                <img class="login" src="img/ttl_login.png">
+                <div id="input_box">
+                    <input type="text" name="id" size="13" maxlength="4">
+                    <input type="text" name="pw" size="13" maxlength="4">
+                </div>
+    
+                <div id="log_button">
+                    <img class="login1" src="img/btn_login.gif">
+                </div>
+    
+                <div id="log_button2">
+                    <img class="login2" src="img/btn_join.gif">
+                    <img class="login3" src="img/btn_search.gif">
+                </div>
+    
+    
+            </div>
+        </section>
+    
+    
+        <section>
+            <div class="community">
+                <img class="commu_box" src="img/sub_menu_bg.png">
+    
+                <ul class="commu_list">
+                    <li>
+                        + 자유게시판
+                    </li>
+    
+                    <li>
+                        + 방명록
+                    </li>
+    
+                    <li>
+                        + 공지사항
+                    </li>
+    
+                    <li>
+                        + 등업 요청
+                    </li>
+    
+                    <li>
+                        + 포토갤러리
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div>
+                <img id="aside_pic" src="img/banner1.png">
+                <img id="aside_pic" src="img/banner2.png">
+                <img id="aside_pic" src="img/banner3.png">
+            </div>
+    
+    </aside>
+
+
+    <main>
+            <section class="commu_banner">
+                <img src="img/comm.gif">
+            </section>
+
+            <div id="free_board_title">
+                <h2>자유 게시판</h2>
+            </div>
+
+            <hr>
+            <!--글쓰기 테이블-->
+            <table class="write_table">
+                <tr id="write">
+                    <td colspan="4">
+                        글쓰기
+                    </td>
+                </tr>
+
+                <tr id="name00">
+                    <td>이름</td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+
+                <tr id="title00">
+                    <td>제목</td>
+                    <td><input id="tittle" type="text"></td>
+                </tr>
+
+                <tr id="content00">
+                    <td>내용</td>
+                    <td style="border: 1px solid;"> 
+                    <p><textarea name="content" rows="10" style="width:100%"></textarea></p>
+                    </form>
+                </tr>
+
+                <tr id="upload00">
+                    <td>업로드 파일</td>
+                    <td><input id="name" type="text"> 
+                    <div>
+                        <input id="my_input" type="file">
+                    </div></td>
+
+                   
+                </tr>
+
+                
+
+    </main>
+
+    <div id="clear"></div>
+    <footer>
+        <div>footer</div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+        /* 기본레이아웃시작 */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(242, 240, 240);
+        }
+
+        #wrap {
+            width: 1100px;
+            height: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 1000px;
+            height: 110px;
+            border: 1px solid red;
+        }
+
+        header #logo{
+            margin-left: 40px;
+            margin-bottom: 10px;
+            padding: 0;
+            width: 150px;
+            height: 40px;
+            float: left;
+            border: 1px solid red;
+        }
+        header nav {
+            width: 1000px;
+            height: 30px; border: 1px solid red;
+            background-color: rgb(78, 76, 77);
+            margin-bottom: 50px;
+        }
+
+        aside {
+            float: left;
+            width: 300px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        main .m1 {
+            float: left;
+            width: 700px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        .clear {
+            clear: both
+        }
+
+        main .m2 {
+            width: 1000px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        main .m3 {
+            width: 1000px;
+            height: 600px;
+            border: 1px solid red;
+        }
+
+        footer {
+            clear: both;
+            width: 1000px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        /* 기본레이이아웃끝 */
+
+        /*메인메뉴 레이아웃*/
+                header .search{
+            float: left;
+            padding-top: 10px;
+            margin-left: 200px;
+            font-size: 12px;
+        }
+        
+
+        header #search_title{
+            color: rgb(158,197,49);
+            float: left;
+        }
+        header .search #search_line {
+            border-bottom:1px solid rgb(150,193,31) ;
+            width: 140px; 
+            padding: 0;
+            float: left;
+        }
+
+        header .simple_menu{
+            width: 350px;
+            position: relative; left: 650px; bottom:40px;
+            font-size: 14px;
+        }
+
+        header .simple_menu li{
+           display: inline; 
+            padding: 5px;
+            color: rgb(136, 136, 145);
+
+        }
+
+        header .main_menu{
+            padding-top: 10px;
+        }
+
+        header .main_menu li{
+            display: inline;
+            padding-left: 100px;
+            font-weight: bold;
+            font-family: "맑은 고딕";
+            color: rgb(214, 214, 210);
+            
+        }

@@ -4,38 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>board_list</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+
+    <style>
+        aside .commu_box {
+            border: 1px solid blue;
+            margin-top: 10px;
+        }
+        aside .commu_list{
+            position: relative;
+            top:-230px;
+            left:20px;
+        }
+
+        aside .commu_list li{
+            padding-bottom: 10px;
+        }
+
+        aside #aside_pic{
+            
+            position: relative;
+            top:-100px
+        }
+
+        /* main .select_img{
+            float:right;
+        } */
+        main .container{
+            float:right;
+        }
+
+        main .container #search_button_img{
+        float: right;
+        margin-left: 10px;
+        }
+
+        main p{
+            font-size: 14px;
+        }
+        main .write_list{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            width: 900px;
+            height: 100px;
+            margin: 35px 0px 0px 10px;
+        }
+
+        main #write_number{
+            text-align: center;
+        }
+
+        main #num{
+            text-align: center;
+        }
+
+        main #tit{
+            text-align: center;
+        }
+
+        main .main_li{
+            background-color: rgb(238,238,238);
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        main table tr,td{
+            border-collapse: collapse;
+        }
+
+        main .sub_list1{
+            margin-left: 250px;
+            margin-top: 20px;
+            float: left;
+        }
+        main .sub_list1 p {
+            display: inline;
+            margin-left: 80px;
+
+        }
+
+       main .sub_list2{
+        margin-top: 30px;
+        margin-left: 785px;
+       }
+    </style>
 </head>
 
 
 <body>
-    <div id="page">
-    
-        <header>
-            <div id="topmenu">
-                <ul>
-                    <li>Home |</li>
-                    <li> Login |</li>
-                    <li> Join |</li>
-                    <li>Notice |</li>
-                </ul>
+<div id="page">
+<header>
+    <div id="topmenu">
+        <ul>
+            <li>Home |</li>
+            <li> Login |</li>
+            <li> Join |</li>
+            <li>Notice |</li>
+        </ul>
+    </div>
+
+    <div id="logo1">
+        <img id="logo" src="img/logo.png">
+    </div>
+
+
+    <div id="logo2">
+        <img id="main_menu" src="img/main_menu_bg.png">
+        <ul id="mainmenu">
+            <li class="menu">자유게시판&nbsp;</li>
+            <li class="menu">기타연주 &nbsp;</li>
+            <li class="menu">공동 구매 &nbsp;</li>
+            <li class="menu">연주회 안내 &nbsp;</li>
+            <li class="menu">회원 게시판 &nbsp;</li>
+        </ul>
+    </div>
+    <div id="clear"></div>
+</header>
+
+
+<aside>
+    <section>
+        <div id="logbox">
+
+            <img class="login" src="img/ttl_login.png">
+            <div id="input_box">
+                <input type="text" name="id" size="13" maxlength="4">
+                <input type="text" name="pw" size="13" maxlength="4">
             </div>
-    
-            <div id="logo1">
-                <img id="logo" src="img/logo.png">
+
+            <div id="log_button">
+                <img class="login1" src="img/btn_login.gif">
             </div>
-            
-        <div id="logo2">
-            <img id="main_menu" src="img/main_menu_bg.png">
-            <ul id="mainmenu">
-                <li class="menu">자유게시판&nbsp;</li>
-                <li class="menu">기타연주 &nbsp;</li>
-                <li class="menu">공동 구매 &nbsp;</li>
-                <li class="menu">연주회 안내 &nbsp;</li>
-                <li class="menu">회원 게시판 &nbsp;</li>
+
+            <div id="log_button2">
+                <img class="login2" src="img/btn_join.gif">
+                <img class="login3" src="img/btn_search.gif">
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="community">
+            <img class="commu_box" src="img/sub_menu_bg.png">
+          
+            <ul class="commu_list">
+                <li>
+                    + 자유게시판
+                </li>
+
+                <li>
+                    + 방명록
+                </li>
+
+                <li>
+                    + 공지사항
+                </li>
+
+                <li>
+                    + 등업 요청
+                </li>
+
+                <li>
+                    + 포토갤러리
+                </li>
             </ul>
         </div>
-        <div id="clear"></div>
-        </header>
+
+        <div>
+            <img id ="aside_pic" src="img/banner1.png">
+            <img id="aside_pic" src="img/banner2.png">
+            <img id="aside_pic" src="img/banner3.png">
+        </div>
+</aside>
+
+<main>
+    <section class="commu_banner">
+        <img src="img/comm.gif">
+    </section>
+
+    <section class="free_list">
+
+        <h3>자유게시판</h3>
+        <hr>
+        <p>▷ 총 5개의 게시물이 있습니다.</p> 
+        
+        <div class ="container">
+            <img class="select_img" src="img/select_search.gif">
+            <select>
+                <option>제목</option>
+                <option>내용</option>
+                <option>댓글</option>
+            </select>
+            <input type="text" size="9"> 
+            <img id="search_button_img" src="img/search_button.gif">
+        </div>
+
+        <!-- <div id="clear"></div> -->
+
+        <table class="write_list">
+            <tr class="main_li">
+                <td id="num">번호</td>
+                <td id="tit">제목</td>
+
+                <td>글쓴이</td>
+                <td>일시</td>
+                <td>조회수</td>
+            </tr>
+            <tr>
+                <td id="write_number">1</td>
+                <td id="write_tiltle"><a href="http://192.168.116.1:5500/mp02/board_view.html">까스롱님의 선물인 보드카가 정말 독하네요!!!</td></a>
+                <td>루바토</td>
+                <td>2017-09-20</td>
+                <td>15</td>
+            </tr>
+            
+            <tr>
+                <td id="write_number">2</td>
+                <td id="write_tiltle">까스롱님의 선물인 보드카가 정말 독하네요!!!</td>
+                <td>루바토</td>
+                <td>2017-09-20</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td id="write_number">3</td>
+                <td id="write_tiltle">까스롱님의 선물인 보드카가 정말 독하네요!!!</td>
+                <td>루바토</td>
+                <td>2017-09-20</td>
+                <td>15</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <div class="sub_list1">
+            <p>◀ 이전</p>
+            <p> 1 </p>
+            <p>다음 ▶</p>
+        </div>
+
+        <div class="sub_list2">
+            <img class="list_img2" src="img/list.png">
+        <a href="http://192.168.116.1:5500/mp02/board_write.html"><img class="writ_btn" src="img/write.png"></a>
+        </div>
+
+        
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+</div>
 </body>
 </html>

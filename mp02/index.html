@@ -4,12 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>board-index</title>
         <link rel="stylesheet" type="text/css" href="css/layout.css">
 
 <style>
     
+                aside #guest_book {
+                    width: 199px;
+                    height: 130px;
+                    background-color: rgb(243, 243, 243);
+                    border: 1.5px solid rgb(221, 221, 221);
+                    border-radius: 10px;
+                    margin-top: 15px;
+                }
+        
+                aside .memo {
+                    margin: 10px 0 0 10px;
+                }
+        
+                aside .line1 {
+                    border-bottom: 0.5px solid rgb(221, 221, 221);
+                    width: 180px;
+                    margin: 5px 0px 15px 10px;
+                }
+        
+                aside #hi ul {
+                    margin-left: 20px;
+                    position: relative;
+                    top: -9px;
+                    left: 10px;
+                }
+        
+                aside #hi li {
+                    list-style-type: disc;
+                    margin-bottom: 2px;
+        
+                }
+        
+                aside #hi li::marker {
+                    color: rgb(72, 174, 221)
+                }
 
+.index_main_main_body {
+    width: 850px;
+}
+
+/* .t1 td {
+            border: 1px solid black;
+        } */
+
+.img1 {
+    float: left;
+}
+
+.img1 li {
+    text-align: center;
+    font-size: 13px;
+}
+
+.t1 td {
+    border: 1px solid black;
+}
+
+.t2 {
+    float: right;
+}
+
+.t2 td {
+    font-size: 12px;
+}
+
+.t2 .index_main_td1 {
+    font-size: 14px;
+}
+
+.latest4 {
+    border: 2px solid rgb(204, 204, 204);
+    width: 750;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.more {
+    float: right;
+}
+
+.name {
+    margin-bottom: -6px;
+}
+
+.youtube {
+    margin-left: 20px;
+}
 </style>
 </head>
 
@@ -34,7 +120,7 @@
             <div id="logo2">
                 <img id="main_menu" src="img/main_menu_bg.png">
                     <ul id="mainmenu">
-                        <li class="menu">자유게시판&nbsp;</li>
+                    <a href="http://192.168.116.1:5500/mp02/board_list.html"> <li class="menu">자유게시판&nbsp;</li></a>
                         <li class="menu">기타연주 &nbsp;</li>
                         <li class="menu">공동 구매 &nbsp;</li>
                         <li class="menu">연주회 안내 &nbsp;</li>
@@ -126,16 +212,13 @@
             <img class="name" src="img/latest3.gif">
             <img class="more" src="img/more.gif">
             <hr>
-            <iframe class="youtube" width="360" height="250" src="https://www.youtube.com/embed/vy2-FlQo72o"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <img img src="img/bach.jpg">
         </td>
     </tr>
     <tr>
         <!-- 자유 게시판 -->
         <td><img class="name" src="img/latest2.gif">
-            <img class="more" src="img/more.gif">
+            <a href="http://192.168.116.1:5500/mp02/board_list.html"><img class="more" src="img/more.gif"></a>
             <hr>
             <img src="img/book_pen.gif">
 
