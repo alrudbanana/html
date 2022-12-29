@@ -15,7 +15,8 @@
     }
 
     #page {
-        width:1800px;
+        width:980px;
+        
         margin:0 auto;
     }
 
@@ -79,17 +80,27 @@
          margin-left: 40px;
     }
     /*header끝*/
+
+
+
     /*Main*/
-    main #banner{
+    /*선택자 주의하자....*/
+    main section #banner{
         margin-top: 10px;
         background-color: #01a6a9 ;
+       
     }
-    main ul{margin-top: 10px;}
+    main #banner ul{
+        
+        margin-top: 10px; 
+        list-style-type: none;
+       
+    }
     
-    main li{
-        margin-left: 25px;
-        padding: 400px 50px 40px 70px;
-        display : inline;
+    main #banner li{
+        margin-left: 100px;
+        display: inline-block;
+        
     }
 
     #customer{
@@ -147,27 +158,26 @@
         margin-left: 250px;
     }
 
-    main #sitemap {
-        padding: 20px 0 0 0px;
+    #sitemap {
+            padding:20px 0 0 15px;
     }
-    main #sitemap div{
-        height: 140px;
-        float: left;
-        margin: 0 15px 0 15px;
-    }
-    main #sitemap h3{
-        font-size: 15px;
-        color: #01a6a9 ;
-        margin-left: 16px;
-
-    }
-    main #sitemap ul{
-        color:#666666;
-    }
-    main #sitemap li{
-        margin:5px 0 0 20px;
-        list-style-type: disc;
-    }
+    #sitemap div {
+            height:140px;
+            float:left;
+            margin:0 15px 0 15px;
+        }
+        #sitemap h3{
+            font-size:15px;
+            color:#12b9b2;
+            margin-left:16px;
+        }
+        #sitemap ul{
+            color:#666666;
+        }
+        #sitemap li{
+            margin:5px 0 0 20px;
+            list-style-image: url("img/blue_dot.gif");
+        }
 
     </style>    
 
@@ -270,6 +280,7 @@
             <section id="sitemap">
                 <div>
                     <h3>손해보험 상식</h3>
+
                     <ul>
                     <li>손해보험이란?</li>
                     <li>나에게 필요한 보험은?</li>
@@ -277,6 +288,7 @@
                     <li>손해보험의 특징</li>
                     </ul>
                 </div>
+                
                 <div>
                     <h3>루바토 보험의 장점</h3>
                     <ul>
@@ -285,6 +297,7 @@
                     <li>만기 시 원리금 보장</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>고객센터</h3>
                     <ul>
@@ -294,6 +307,7 @@
                     <li>질문과 답변</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>마이페이지</h3>
                     <ul>
@@ -303,6 +317,7 @@
                     <li>증명서 발급</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>가입 안내</h3>
                     <ul>
@@ -312,7 +327,7 @@
                     <li>웹 로그인</li>
                     </ul>
                 </div>
-                <div class="clear"></div>
+
                 <div>
                     <h3>회사 소개</h3>
                     <ul>
@@ -320,14 +335,13 @@
                     <li>찾아오시는 길</li>
                     </ul>
                 </div>
+            
             </section>		
                 <div class="clear"></div>
         </main>
 
         
-    </div>
 
-
-    
+</div>    
 </body>
 </html>

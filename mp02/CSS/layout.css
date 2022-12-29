@@ -1,0 +1,227 @@
+           * {
+               margin: 0;
+               padding: 0;
+           }
+
+           #page {
+               border: 1px solid red;
+               width: 1200px;
+               margin: 0 auto;
+               /*중앙정렬 처리*/
+           }
+
+           header {
+               border: 1px solid red;
+               width: 100%;
+           }
+
+           aside {
+               border: 1px solid red;
+               width: 200px;
+               height: 500px;
+               float: left;
+           }
+
+           main {
+               border: 1px solid red;
+               width: 1000px;
+               height: 800px;
+               /*px로 정하면 고정되어 움직이지 않음*/
+               margin-left: 200px;
+           }
+
+           footer {
+               border: 1px solid red;
+               width: 100%;
+               height: 90px;
+           }
+
+           /* main>div {
+              
+               margin: 10px;
+
+               width: 20%;
+               height: 100px;
+               float: left;
+           } */
+
+
+                            body {
+                               font-size: 12px;
+                               font-family: "맑은 고딕", "돋움";
+                           }
+            
+                           ul {
+                               list-style-type: none;
+                           }
+            
+                           header #logo {
+                               margin: 0px 20px 0px 10px;
+                               float: left;
+                           }
+            
+                           header #main_menu {
+                               margin: 15px 20px 0px 10px;
+                               float: left;
+                           }
+            
+                           header #topmenu ul {
+                               margin-top: 10px;
+                               margin-left: 760px;
+                           }
+            
+                           header #topmenu li {
+                               font-size: 14px;
+                               display: inline;
+                           }
+            
+                           #clear {
+                               clear: both
+                           }
+            
+                           header #top_menu li {
+                               font-weight: bold;
+                               display: inline;
+                           }
+            
+                           header #mainmenu {
+                               position: absolute;
+                               margin: 22px 140px 100px 250px;
+                               width: 1000px;
+            
+                           }
+            
+                           header #mainmenu li {
+                               float: left;
+                               font-size: 15px;
+                               font-weight: bold;
+                               color: white;
+                               display: inline;
+                               padding-right: 65px;
+                           }
+
+                aside #logbox {
+                    width: 199px;
+                    height: 120px;
+                    background-color: rgb(243, 243, 243);
+                    border: 1.5px solid rgb(221, 221, 221);
+                    border-radius: 10px;
+                }
+        
+                aside #input_box {
+                    float: left;
+                }
+        
+                aside .login {
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    float: left;
+                }
+        
+                aside #input_box {
+                    margin-left: 5px;
+                    float: left;
+                }
+        
+                aside .login1 {
+                    position: relative;
+                    right: -130px;
+                    bottom: 40px;
+                }
+        
+                aside .login2 {
+                    position: relative;
+                }
+        
+                aside #log_button2 {
+                    position: relative;
+                    top: -33px;
+                }
+        
+                aside #guest_book {
+                    width: 199px;
+                    height: 130px;
+                    background-color: rgb(243, 243, 243);
+                    border: 1.5px solid rgb(221, 221, 221);
+                    border-radius: 10px;
+                    margin-top: 15px;
+                }
+        
+                aside .memo {
+                    margin: 10px 0 0 10px;
+                }
+        
+                aside .line1 {
+                    border-bottom: 0.5px solid rgb(221, 221, 221);
+                    width: 180px;
+                    margin: 5px 0px 15px 10px;
+                }
+        
+                aside #hi ul {
+                    margin-left: 20px;
+                    position: relative;
+                    top: -9px;
+                    left: 10px;
+                }
+        
+                aside #hi li {
+                    list-style-type: disc;
+                    margin-bottom: 2px;
+        
+                }
+        
+                aside #hi li::marker {
+                    color: rgb(72, 174, 221)
+                }
+
+.index_main_main_body {
+    width: 850px;
+}
+
+/* .t1 td {
+            border: 1px solid black;
+        } */
+
+.img1 {
+    float: left;
+}
+
+.img1 li {
+    text-align: center;
+    font-size: 13px;
+}
+
+.t1 td {
+    border: 1px solid black;
+}
+
+.t2 {
+    float: right;
+}
+
+.t2 td {
+    font-size: 12px;
+}
+
+.t2 .index_main_td1 {
+    font-size: 14px;
+}
+
+.latest4 {
+    border: 2px solid rgb(204, 204, 204);
+    width: 750;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.more {
+    float: right;
+}
+
+.name {
+    margin-bottom: -6px;
+}
+
+.youtube {
+    margin-left: 20px;
+}
